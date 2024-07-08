@@ -15,7 +15,7 @@ Built on the Ethereum network, HardikBegContract is a straightforward token smar
 ### State Variables
 
 - tokenName: The token's name. (Open to the public)
-tokenAbbr: The token's abbreviation. (Open to the public)
+- tokenAbbr: The token's abbreviation. (Open to the public)
 - totalSupply: The whole token supply. (Open to the public)
 - balances: A mapping for monitoring the balance of tokens
   
@@ -23,23 +23,23 @@ tokenAbbr: The token's abbreviation. (Open to the public)
 
 #### mint
 
-solidity function mint(address addr,uint amount) outside
+solidity function mint(address addr,uint amount) external
 
 
 - Description: Adds to the overall supply by minting new tokens and allocating them to the designated address.
-- Information:
+- Parameters:
   - addr: The address that the tokens that are minted will be sent to.
   - amount: The quantity of tokens to be produced.
-* Visibility*: outside
+* Visibility*: external
 
 #### burn
 
-solidity function burn (address addr,uint amount) outside
+solidity function burn (address addr,uint amount) external
 
 
 - Description: Reduces the overall supply of tokens by burning them from the designated address.
-- Information:
+- Parameters:
   - addr: The address where the burned tokens will come from.
   - amount: The quantity of tokens to be burned.
-* Visibility*: outside
+* Visibility*: external
 - Condition: The function determines whether the overall supply exceeds the amount that needs to be burned and whether the address has enough balance to burn.
